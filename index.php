@@ -22,6 +22,13 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 
+			if($text== "hi"){
+				$messages = [
+				'type' => 'text',
+				'text' => "Fuck"
+				];
+			}
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
